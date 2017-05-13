@@ -1,7 +1,7 @@
 var packageName = 'leaf4monkey:oauth-helpers-server';
 var mainModule = './lib/index.js';
 var mainModuleEnv = 'server';
-var version = '0.0.5';
+var version = '0.0.6';
 
 Package.describe({
   name: packageName,
@@ -17,13 +17,6 @@ var commonDependencies = function (api) {
   // install `oauth1` or `oauth2` by yourself.
   api.use('oauth1', mainModuleEnv, {weak: true});
   api.use('oauth2', mainModuleEnv, {weak: true});
-
-  api.use('oauth', mainModuleEnv);
-  api.use('service-configuration', mainModuleEnv);
-
-  api.use('accounts-base', mainModuleEnv);
-  api.imply('accounts-base', mainModuleEnv);
-  api.use('accounts-oauth', mainModuleEnv);
 
   api.use('leaf4monkey:oauth-helpers-common@' + version, mainModuleEnv);
 };
