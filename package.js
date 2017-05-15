@@ -1,7 +1,7 @@
 var packageName = 'leaf4monkey:oauth-helpers-server';
 var mainModule = './lib/index.js';
 var mainModuleEnv = 'server';
-var version = '0.0.6';
+var version = '0.0.8';
 
 Package.describe({
   name: packageName,
